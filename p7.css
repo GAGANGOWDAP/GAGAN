@@ -1,0 +1,33 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.image-container img {
+    position: absolute;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border: 3px solid #333;
+    border-radius: 8px; /* Optional for rounded corners */
+}
+
+.image1 {
+    top: 0;
+    left: 0;
+}
+
+.image2 {
+    bottom: 0;
+    right: 0;
+}

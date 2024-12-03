@@ -1,86 +1,103 @@
-//write html code for adding an content inside my webpage where you need to add block level and inline element for displaying college different department//
+// write code for matrimony registration form//
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Departments</title>
+    <title>Matrimony Registration Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
+            background-color: #f9f9f9;
         }
-
-        section {
+        .container {
+            width: 50%;
+            margin: auto;
             padding: 20px;
-            margin: 10px auto;
-            max-width: 800px;
-            background-color: #f4f4f4;
+            background: #4165f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            border: 1px solid #ddd;
         }
-
-        section h2 {
-            color: #003366;
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
         }
-
-        p {
-            margin: 10px 0;
+        form label {
+            font-weight: bold;
         }
-
-        .department {
-            margin: 10px 0;
+        form input, form select, form textarea {
+            width: 100%;
             padding: 10px;
-            background-color: #e8f0fe;
-            border-left: 4px solid #0055a5;
+            margin: 10px 0 20px;
+            border: 1px solid #e36af3;
+            border-radius: 5px;
         }
-
-        .department strong {
-            color: #0055a5;
+        form input[type="submit"] {
+            background-color: #007BFF;
+            color: rgb(226, 207, 95);
+            border: none;
+            cursor: pointer;
+            padding: 15px;
         }
-
-        a {
-            color: #0055a5;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        form input[type="submit"]:hover {
+            background-color: #29c550;
         }
     </style>
 </head>
 <body>
-    <header style="background-color: #003366; color: white; padding: 10px; text-align: center;">
-        <h1>DBIT College Departments</h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Explore Our Departments</h2>
-            <p>Our college offers a variety of academic departments that cater to diverse fields of study and research. Below are some of our key departments:</p>
+    <div class="container">
+        <h1>Matrimony Registration Form</h1>
+        <form action="#" method="post">
+            <td><img src="https://tse1.mm.bing.net/th?id=OIP.Z8wp1Tu6S5zU7qWP5B5BPAHaE8&pid=Api&P=0&h=180" alt="Photo">
+            </td>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Kiccha Sudeepa" required>
             
-            <div class="department">
-                <strong>Department of Computer Science</strong>: Focused on <em>cutting-edge technologies</em>, programming, and research in artificial intelligence. Visit the <a href="#cs">Computer Science Department</a>.
-            </div>
 
-            <div class="department">
-                <strong>Department of Mechanical Engineering</strong>: Known for innovation in <em>design and manufacturing</em>, offering extensive lab facilities. Visit the <a href="#mech">Mechanical Engineering Department</a>.
-            </div>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="Male" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
 
-            <div class="department">
-                <strong>Department of Business Administration</strong>: Provides expertise in <em>management, finance, and entrepreneurship</em>. Learn more at the <a href="#mba">Business Administration Department</a>.
-            </div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="27/04/2004" required>
 
-            <div class="department">
-                <strong>Department of Biology</strong>: Specializes in <em>biotechnology, genetics, and ecological studies</em>. Explore the <a href="#bio">Biology Department</a>.
-            </div>
-        </section>
-    </main>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="mkvidhatha@gmail.com" required>
 
-    <footer style="background-color: #005c66; color: white; text-align: center; padding: 10px;">
-        <p>&copy; 2024 DBIT College. All Rights Reserved.</p>
-    </footer>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="9886684474" required>
+
+            <label for="religion">Religion:</label>
+            <select id="religion" name="Hindu" required>
+                <option value="">Select</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Christian">Christian</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="caste">Caste:</label>
+            <input type="text" id="caste" name="caste" placeholder="Hindu">
+
+            <label for="height">Height (in cm):</label>
+            <input type="number" id="height" name="height" placeholder="5.9" required>
+
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="67" required>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" placeholder="Data scientist" required>
+
+            <label for="about">About Yourself:</label>
+            <textarea id="about" name="about" rows="4" placeholder="Write a brief description about yourself"></textarea>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
 </body>
 </html>

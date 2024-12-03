@@ -1,0 +1,18 @@
+
+        .styled-paragraph {
+            color: #ffffff; /* Text color */
+            background-color: #007BFF; /* Background color */
+            text-align: justify; /* Text alignment */
+            direction: ltr; /* Text direction (Left to Right) */
+            text-transform: capitalize; /* Text transformation */
+            text-indent: 50px; /* Text indentation */
+            letter-spacing: 2px; /* Letter spacing */
+            line-height: 1.8; /* Line height */
+            word-spacing: 5px; /* Word spacing */
+            white-space: pre-line; /* White space handling */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+    

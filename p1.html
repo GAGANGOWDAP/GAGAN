@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Heading</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        ul li ul {
+            margin-left: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        a:hover {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Electronics</a>
+                <img src="https://img.freepik.com/premium-photo/futuristic-gadgets-showcase-lineup-sleek-modern-technological-devices_977107-682.jpg?w=2000" alt="[Iphone 16] Features" style="width:100%; max-width:400px; margin: 20px 0;">
+                <ul>
+                    <li><a href="#">Mobile Phones</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Cameras</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Furniture</a>
+                <img src="https://www.intagliahome.com/ih-content/uploads/2016/12/STEVENS_16399-94RM.jpg" alt="[Iphone 16] Features" style="width:100%; max-width:400px; margin: 20px 0;">
+                <ul>
+                    <li><a href="#">Sofas</a></li>
+                    <li><a href="#">Beds</a></li>
+                    <li><a href="#">Dining Tables</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Clothing</a>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.FzKC6e_keBcaoOTjVqQqhQHaE8&pid=Api&P=0&h=180" alt="[Iphone 16] Features" style="width:100%; max-width:400px; margin: 20px 0;">
+                <ul>
+                    <li><a href="#">Men's Wear</a></li>
+                    <li><a href="#">Women's Wear</a></li>
+                    <li><a href="#">Kid's Wear</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </body>
 </html>

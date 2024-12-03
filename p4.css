@@ -1,0 +1,16 @@
+
+/* Tag Selectors */
+div p {
+    color: red;
+    font-size: 18px;
+}
+
+section p {
+    color: blue;
+    font-size: 20px;
+}
+
+article p {
+    color: green;
+    font-size: 22px;
+}
