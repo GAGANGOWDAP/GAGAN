@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .image-matrix {
+    display: inline-block;
+    line-height: 0; /* Removes spacing between inline-block elements */
+  }
+  
+  .image-matrix img {
+    width: 100px; /* Set image dimensions */
+    height: 100px;
+    margin: 0;
+    display: inline-block; /* Ensure inline layout */
+    vertical-align: top; /* Aligns the images correctly */
+  }
+  

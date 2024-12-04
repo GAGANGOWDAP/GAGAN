@@ -1,79 +1,48 @@
-//write a program to create a list of items for an hotel menu using tables//
-//first cloumn image of dish//
-//second cloumn will be name of the dish//
-// third column will be price of the dish //
+//without using grid and flexing and table//
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fog cafe Menu 
-    </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(52, 174, 195, 0.918);
-        }
-        th, td {
-            border: 2px solid #a914e4;
-            text-align: center;
-            padding: 15px;
-        }
-        th {
-            background-color: #66ee0b;
-            font-size: 19px;
-        }
-        img {
-            width: 130px;
-            height: auto;
-            border-radius: 9px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3 Matrix</title>
+  <style>
+    .container {
+      width: 300px; /* Adjust based on image size and spacing */
+      margin: 50px auto; /* Center the container */
+      position: relative; /* For precise positioning */
+    }
+    .cell {
+      width: 100px; /* Set cell width */
+      height: 100px; /* Set cell height */
+      position: absolute; /* Absolute positioning within the container */
+    }
+    .cell img {
+      width: 100%;
+      height: 100%;
+    }
+    /* Positioning the 9 cells */
+    .cell:nth-child(1) { top: 0; left: 0; }
+    .cell:nth-child(2) { top: 0; left: 100px; }
+    .cell:nth-child(3) { top: 0; left: 200px; }
+    .cell:nth-child(4) { top: 100px; left: 0; }
+    .cell:nth-child(5) { top: 100px; left: 100px; }
+    .cell:nth-child(6) { top: 100px; left: 200px; }
+    .cell:nth-child(7) { top: 200px; left: 0; }
+    .cell:nth-child(8) { top: 200px; left: 100px; }
+    .cell:nth-child(9) { top: 200px; left: 200px; }
+  </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Fog cafe Menu</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Recepie</th>
-                <th>Dish Name</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="https://playswellwithbutter.com/wp-content/uploads/2021/06/Grilled-Whole-Chicken-with-Creamy-Jalapeno-Sauce-ALDI-21.jpg" alt="Dish 1"></td>
-                <td>Grilled Chicken</td>
-                <td>$12.99</td>
-            </tr>
-            <tr>
-                <td><img src="https://tse3.mm.bing.net/th?id=OIP.uPJcJpbeVGUkSSOSJdQKcQHaE8&pid=Api&P=0&h=180" alt="Dish 2"></td>
-                <td>Veggie Pasta</td>
-                <td>$8.99</td>
-            </tr>
-            <tr>
-                <td><img src="https://tse2.mm.bing.net/th?id=OIP.JGigDSijh-lKRw6YaZQGVwHaDs&pid=Api&P=0&h=180" alt="Dish 3"></td>
-                <td>Cheeseburger</td>
-                <td>$10.49</td>
-            </tr>
-            <tr>
-                <td><img src="https://tse3.mm.bing.net/th?id=OIP.8UagT3WWGxruvIOqJTCPeQHaE8&pid=Api&P=0&h=180" alt="Dish 4"></td>
-                <td>Caesar Salad</td>
-                <td>$7.49</td>
-            </tr>
-            <tr>
-                <td><img src="https://tse2.mm.bing.net/th?id=OIP.kaN2LByJDay3KY4C9oO8uwHaEo&pid=Api&P=0&h=180" alt="Dish 5"></td>
-                <td>Wine</td>
-                <td>$19.49</td>
-
-            </tr>
-        </tbody>
-    </table>
+  <div class="container">
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 1"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 2"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 3"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 4"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 5"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 6"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 7"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 8"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 9"></div>
+  </div>
 </body>
-</html>
+</html

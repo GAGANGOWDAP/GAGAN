@@ -1,103 +1,45 @@
-// write code for matrimony registration form//
+<!-- with using grid -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrimony Registration Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            width: 50%;
-            margin: auto;
-            padding: 20px;
-            background: #4165f8;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        form label {
-            font-weight: bold;
-        }
-        form input, form select, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0 20px;
-            border: 1px solid #e36af3;
-            border-radius: 5px;
-        }
-        form input[type="submit"] {
-            background-color: #007BFF;
-            color: rgb(226, 207, 95);
-            border: none;
-            cursor: pointer;
-            padding: 15px;
-        }
-        form input[type="submit"]:hover {
-            background-color: #29c550;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x3 Matrix</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px); /* 3 columns of 100px each */
+      grid-template-rows: repeat(3, 100px); /* 3 rows of 100px each */
+      gap: 10px; /* Optional: spacing between grid items */
+      justify-content: center; /* Center the grid horizontally */
+      margin: 50px auto; /* Center the container */
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: #f0f0f0; /* Optional: background for visibility */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc; /* Optional: border for visibility */
+    }
+    .cell img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Matrimony Registration Form</h1>
-        <form action="#" method="post">
-            <td><img src="https://tse1.mm.bing.net/th?id=OIP.Z8wp1Tu6S5zU7qWP5B5BPAHaE8&pid=Api&P=0&h=180" alt="Photo">
-            </td>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Kiccha Sudeepa" required>
-            
-
-            <label for="gender">Gender:</label>
-            <select id="gender" name="Male" required>
-                <option value="">Select</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-            </select>
-
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="27/04/2004" required>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="mkvidhatha@gmail.com" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="9886684474" required>
-
-            <label for="religion">Religion:</label>
-            <select id="religion" name="Hindu" required>
-                <option value="">Select</option>
-                <option value="Hindu">Hindu</option>
-                <option value="Muslim">Muslim</option>
-                <option value="Christian">Christian</option>
-                <option value="Other">Other</option>
-            </select>
-
-            <label for="caste">Caste:</label>
-            <input type="text" id="caste" name="caste" placeholder="Hindu">
-
-            <label for="height">Height (in cm):</label>
-            <input type="number" id="height" name="height" placeholder="5.9" required>
-
-            <label for="weight">Weight (in kg):</label>
-            <input type="number" id="weight" name="weight" placeholder="67" required>
-
-            <label for="occupation">Occupation:</label>
-            <input type="text" id="occupation" name="occupation" placeholder="Data scientist" required>
-
-            <label for="about">About Yourself:</label>
-            <textarea id="about" name="about" rows="4" placeholder="Write a brief description about yourself"></textarea>
-
-            <input type="submit" value="Register">
-        </form>
-    </div>
+  <div class="container">
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 1"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 2"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 3"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 4"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 5"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 6"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 7"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 8"></div>
+    <div class="cell"><img src="https://images.hdqwalls.com/wallpapers/cars-3-animated-movie-hd.jpg" alt="Image 9"></div>
+  </div>
 </body>
 </html>
